@@ -1,4 +1,4 @@
-package Infra.Persistence;
+package Infra;
 
 /**
  * Created by caiomcg on 17/05/17.

@@ -1,4 +1,4 @@
-package Infra.Persistence;
+package Infra;
 
 import business.model.User;
 
