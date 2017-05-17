@@ -6,7 +6,7 @@ package Infra;
 public class PersistenceFactory {
     public static Persistence createPersistence(PersistenceType type) {
         switch (type) {
-            case DB:
+            case FILE:
                 return new PersistenceFileImpl();
             case JSON:
                 return PersistenceJSONImpl.getInstance();
