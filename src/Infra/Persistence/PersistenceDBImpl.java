@@ -3,5 +3,6 @@ package Infra.Persistence;
 /**
  * Created by caiomcg on 17/05/17.
  */
-public class PersistenceDBImpl {
+public class PersistenceDBImpl implements Persistence {
+
 }

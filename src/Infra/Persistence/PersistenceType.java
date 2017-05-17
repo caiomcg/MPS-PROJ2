@@ -3,5 +3,6 @@ package Infra.Persistence;
 /**
  * Created by caiomcg on 17/05/17.
  */
-public class PersistenceJSONImpl implements Persistence {
+public enum PersistenceType {
+    JSON, DB
 }
