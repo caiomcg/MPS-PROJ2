@@ -7,9 +7,9 @@ public class PersistenceFactory {
     public static Persistence createPersistence(PersistenceType type) {
         switch (type) {
             case DB:
-                return new PersistenceDBImpl();
+                return new PersistenceFileImpl();
             case JSON:
-                return new PersistenceJSONImpl();
+                return PersistenceJSONImpl.getInstance();
             default:
                 return null;
         }

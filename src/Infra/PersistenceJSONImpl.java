@@ -13,13 +13,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by caiomcg on 17/05/17.
+ * Created by Marcelo on 11/04/2017.
  */
 public class PersistenceJSONImpl implements Persistence {
 
-    private static final String DATABASE = "./src/database/";
+    private static final String DATABASE = "./src/database/jsondb.json";
+    private static PersistenceJSONImpl instance = new PersistenceJSONImpl();
 
-    public PersistenceJSONImpl() {}
+    private PersistenceJSONImpl() {}
+
+    public static PersistenceJSONImpl getInstance() {
+        return instance;
+    }
 
     @Override
     public void saveOnDatabase(Map<String, User> userMap) throws PersistenceException {
@@ -46,7 +51,7 @@ public class PersistenceJSONImpl implements Persistence {
 
     private String mapToJson(Map<String, User> userMap) {
         Gson gson = new GsonBuilder().setPrettyPrinting()
-                .create();
+                                     .create();
 
         return gson.toJson(userMap);
     }

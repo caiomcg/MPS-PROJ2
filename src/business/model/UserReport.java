@@ -11,7 +11,6 @@ import java.util.Map;
  */
 public class UserReport extends StatisticsReport {
 
-
     @Override
     protected List<String> generateList() {
         UserControl userControl = UserControl.getInstance();

@@ -3,7 +3,7 @@ package business.control;
 /**
  * Created by Marcelo on 17/05/2017.
  */
-public class StatisticsControl {
+public class MSNManager {
 
 
 }

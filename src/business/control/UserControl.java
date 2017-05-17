@@ -1,6 +1,10 @@
 package business.control;
 
+import Infra.PersistenceException;
 import business.model.User;
+import business.util.LoginInvalidException;
+import business.util.PasswordInvalidException;
+import business.util.ValidateUser;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -19,13 +23,15 @@ public class UserControl {
 
     private UserControl() {}
 
-    public void addUser(User user) {
+    public void addUser(User user) throws LoginInvalidException, PasswordInvalidException, PersistenceException {
 
-        this.users.put(user.getLogin(), user);
-//        this.persistence.saveOnDatabase(this.users);
+        if (ValidateUser.validateUser(user)) {
+            this.users.put(user.getLogin(), user);
+//            this.persistence.saveOnDatabase(this.users);
+        }
     }
 
-    public void updateUser(User user) {
+    public void updateUser(User user) throws LoginInvalidException, PasswordInvalidException, PersistenceException {
         this.addUser(user);
     }
 

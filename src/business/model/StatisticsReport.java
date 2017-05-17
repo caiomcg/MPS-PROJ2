@@ -25,7 +25,7 @@ public abstract class StatisticsReport {
         html.append( "<ul>\n" );
         // Loop the list of reports passed as argument.
         for ( String report : generateList() ) {
-            html.append( "<li>" + report + "</li>\n" );
+            html.append("<li>").append(report).append("</li>\n");
         }
         html.append( "</ul>\n" );
         html.append( "</body>\n\n" );
