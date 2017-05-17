@@ -1,19 +1,23 @@
 package business.model;
 
-import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Marcelo on 17/05/2017.
  */
 public class Artist {
 
-    private List<Album> albumList;
+    private Map<String, Album> albumList;
 
-    public Artist(List<Album> albumList) {
+    public Artist(Map<String, Album> albumList) {
         this.albumList = albumList;
     }
 
-    public List<Album> getAlbumList() {
+    public Map<String, Album> getAlbumList() {
         return albumList;
+    }
+
+    public Album getAlbum(String name) {
+        return albumList.get(name);
     }
 }
