@@ -25,6 +25,6 @@ public class PersistenceMaker {
     }
 
     public User findUser(String username) {
-        
+        return null;
     }
 }

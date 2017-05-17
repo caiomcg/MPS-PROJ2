@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b3d51548-55bd-417c-ab04-09409a44a975" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Infra/Persistence/PersistenceDBImpl.java" afterPath="$PROJECT_DIR$/src/Infra/Persistence/PersistenceDBImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Infra/Persistence/PersistenceFactory.java" afterPath="$PROJECT_DIR$/src/Infra/Persistence/PersistenceFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Infra/Persistence/PersistenceJSONImpl.java" afterPath="$PROJECT_DIR$/src/Infra/Persistence/PersistenceJSONImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Infra/Persistence/PersistenceMaker.java" afterPath="$PROJECT_DIR$/src/Infra/Persistence/PersistenceMaker.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,11 +49,13 @@
       <file leaf-file-name="PersistenceMaker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Infra/Persistence/PersistenceMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            <state relative-caret-position="500">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#220#221#0" expanded="true" />
                 <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -415,12 +414,12 @@
       <updated>1495048008160</updated>
       <workItem from="1495048010019" duration="30000" />
       <workItem from="1495048785809" duration="1663000" />
-      <workItem from="1495051256109" duration="1202000" />
+      <workItem from="1495051256109" duration="1297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2895000" />
+    <option name="totallyTimeSpent" value="2990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
@@ -559,11 +558,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Infra/Persistence/PersistenceMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        <state relative-caret-position="500">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#220#221#0" expanded="true" />
             <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
           </folding>
         </state>
       </provider>
