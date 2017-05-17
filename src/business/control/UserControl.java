@@ -1,6 +1,9 @@
 package business.control;
 
+import Infra.Persistence;
 import Infra.PersistenceException;
+import Infra.PersistenceMaker;
+import Infra.PersistenceType;
 import business.model.User;
 import business.util.LoginInvalidException;
 import business.util.PasswordInvalidException;
@@ -16,6 +19,7 @@ public class UserControl {
 
     private Map<String, User> users;
     private static UserControl instance = new UserControl();
+    private PersistenceMaker persistence = new PersistenceMaker(PersistenceType.JSON);
 
     public static UserControl getInstance() {
         return instance;
