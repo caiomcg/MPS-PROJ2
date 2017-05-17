@@ -1,4 +1,4 @@
-package Control;
+package business.control;
 
 /**
  * Created by caiomcg on 17/05/17.
