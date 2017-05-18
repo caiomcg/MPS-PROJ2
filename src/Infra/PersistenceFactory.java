@@ -7,7 +7,7 @@ public class PersistenceFactory {
     public static Persistence createPersistence(PersistenceType type) {
         switch (type) {
             case FILE:
-                return new PersistenceFileImpl();
+                return PersistenceFileImpl.getInstance();
             case JSON:
                 return PersistenceJSONImpl.getInstance();
             default:
