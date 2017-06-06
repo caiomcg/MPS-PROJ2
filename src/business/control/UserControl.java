@@ -25,7 +25,7 @@ public class UserControl {
         return instance;
     }
 
-    private UserControl() {}
+    protected UserControl() {}
 
     public void addUser(User user) throws LoginInvalidException, PasswordInvalidException, PersistenceException {
 
