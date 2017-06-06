@@ -1,6 +1,6 @@
 package business.model;
 
-import business.control.UserControl;
+import business.control.UserControlImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class UserReport extends StatisticsReport {
 
     @Override
     protected List<String> generateList() {
-        UserControl userControl = UserControl.getInstance();
+        UserControlImpl userControl = UserControlImpl.getInstance();
 
         Map<String, User> users = userControl.getAllUsers();
 

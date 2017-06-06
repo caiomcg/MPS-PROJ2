@@ -8,7 +8,8 @@ import business.util.PasswordInvalidException;
 /**
  * Created by wesnydy on 05/06/17.
  */
-public class UserProxy extends UserControl {
+public class UserProxy implements UserControl {
+    private UserControl userControl = UserControlImpl.getInstance();
     protected String user;
     protected String password;
 
@@ -20,25 +21,22 @@ public class UserProxy extends UserControl {
     @Override
     public void addUser(User user) throws LoginInvalidException, PasswordInvalidException, PersistenceException {
         if (IsAllowedAccess()) {
-            super.addUser(user);
+            userControl.addUser(user);
         }
-        return;
     }
 
     @Override
     public void updateUser(User user) throws LoginInvalidException, PasswordInvalidException, PersistenceException {
         if (IsAllowedAccess()) {
-            super.updateUser(user);
+            userControl.updateUser(user);
         }
-        return;
     }
 
     @Override
     public void removeUser(String login) {
         if (IsAllowedAccess()) {
-            super.removeUser(login);
+            userControl.removeUser(login);
         }
-        return;
     }
 
     private boolean IsAllowedAccess() {

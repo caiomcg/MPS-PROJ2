@@ -1,5 +1,6 @@
 package business.model;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -19,6 +20,10 @@ public class Playlist {
         this.artistMap = playlist.getArtistMap();
     }
 
+    public Playlist() {
+        this.name = "";
+        this.artistMap = new HashMap<>();
+    }
 
     public String getName() {
         return name;
